@@ -5,7 +5,8 @@ import "./App.css";
       const [todos, setTodos] = React.useState([]);
   
       const [todoEditing, setTodoEditing] = React.useState(null);
-  
+      //local storage part not working currently
+      //needed to be seen
       useEffect(() => {
       const json = localStorage.getItem("todos");
       const loadedTodos = JSON.parse(json);
